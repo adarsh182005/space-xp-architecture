@@ -1,6 +1,11 @@
 /* Mobile layout fixes */
 
-/* Keep the supplied SPACE XP logo inside the viewport. */
+/* Use the supplied SPACE XP logo without showing its white image background. */
+.site-logo img,
+.hero-logo-title img {
+  mix-blend-mode: multiply;
+}
+
 .hero-logo-title {
   display: flex;
   align-items: center;

@@ -1,5 +1,22 @@
 /* Mobile layout fixes */
 @media (max-width: 768px) {
+  /* Keep the SPACE XP. brand title on one line on mobile. */
+  .hero-title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.08em;
+    white-space: nowrap;
+    font-size: clamp(52px, 16vw, 115px);
+    line-height: 0.8;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-title span,
+  .hero-title span:last-child {
+    display: inline;
+    padding-left: 0;
+  }
+
   .philosophy h2 {
     width: 100%;
     max-width: 100%;

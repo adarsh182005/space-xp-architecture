@@ -1,20 +1,23 @@
 /* Mobile layout fixes */
-@media (max-width: 768px) {
-  /* Keep the SPACE XP. brand title on one line on mobile. */
-  .hero-title {
-    display: flex;
-    align-items: baseline;
-    gap: 0.08em;
-    white-space: nowrap;
-    font-size: clamp(52px, 16vw, 115px);
-    line-height: 0.8;
-    letter-spacing: -0.055em;
-  }
+.hero-logo-title {
+  display: flex;
+  align-items: center;
+  width: min(100%, 620px);
+  height: auto;
+  margin: 24px 0 26px;
+}
 
-  .hero-title span,
-  .hero-title span:last-child {
-    display: inline;
-    padding-left: 0;
+.hero-logo-title img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-logo-title {
+    width: min(92vw, 560px);
+    margin: 18px 0 24px;
   }
 
   .philosophy h2 {

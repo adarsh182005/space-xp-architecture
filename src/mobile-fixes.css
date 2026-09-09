@@ -1,0 +1,12 @@
+/* Mobile layout fixes */
+@media (max-width: 768px) {
+  .philosophy h2 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: clamp(26px, 7.5vw, 48px);
+    line-height: 0.82;
+    letter-spacing: -0.035em;
+    overflow-wrap: normal;
+  }
+}

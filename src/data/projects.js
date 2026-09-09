@@ -1,5 +1,5 @@
 export const IMG = {
-  hero: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2400&q=88",
+  hero: "/space-xp-hero.png",
 
   featured: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2400&q=88",
 

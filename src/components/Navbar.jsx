@@ -39,7 +39,8 @@ function Navbar() {
         <button
           className="menu-button"
           onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
         >
           {open ? (
             <X size={20} strokeWidth={1.5} />

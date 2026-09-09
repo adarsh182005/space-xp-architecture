@@ -2,12 +2,11 @@ import React from "react";
 
 function Logo() {
   return (
-    <a
-      className="logo"
-      href="#top"
-      aria-label="SPACE XP home"
-    >
-      SPACE <span>XP.</span>
+    <a href="#home" className="site-logo">
+      <img
+        src="/space-xp-logo.png"
+        alt="SPACE XP. Architectural Studios"
+      />
     </a>
   );
 }

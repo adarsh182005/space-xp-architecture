@@ -1350,3 +1350,34 @@ footer {
   .typology-meta { flex-direction:column; }
   .typology-explore { padding-top:0; }
 }
+
+
+/* =========================================================
+   VIDEO WALKTHROUGHS
+========================================================= */
+.walkthrough-section { border-top:1px solid var(--line); }
+.walkthrough-heading { display:flex; justify-content:space-between; align-items:end; gap:40px; margin-bottom:42px; }
+.walkthrough-title { margin:0; font-size:clamp(48px,7vw,96px); line-height:.88; font-weight:400; letter-spacing:-.045em; }
+.walkthrough-title em { color:var(--gold); font-weight:400; }
+.walkthrough-heading > p { max-width:320px; margin:0 0 5px; color:var(--muted); font-size:13px; line-height:1.8; }
+.walkthrough-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+.walkthrough-card { display:block; min-width:0; }
+.walkthrough-image { height:clamp(210px,26vw,360px); background:#e4e0d8; position:relative; }
+.walkthrough-image img { transition:transform .8s cubic-bezier(.2,.65,.25,1); }
+.walkthrough-card:hover .walkthrough-image img { transform:scale(1.04); }
+.walkthrough-play { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:48px; height:48px; display:grid; place-items:center; padding-left:3px; color:#fff; border:1px solid rgba(255,255,255,.85); border-radius:50%; background:rgba(17,17,17,.22); backdrop-filter:blur(5px); }
+.walkthrough-index { position:absolute; top:13px; left:14px; color:#fff; font-size:10px; letter-spacing:.15em; }
+.walkthrough-meta { display:flex; justify-content:space-between; align-items:center; gap:10px; padding-top:14px; color:var(--ink); }
+.walkthrough-meta h3 { margin:0 0 5px; font-size:clamp(17px,1.6vw,22px); font-weight:400; }
+.walkthrough-meta p { margin:0; color:var(--muted); font-size:10px; }
+.walkthrough-meta > svg { flex-shrink:0; color:var(--gold); }
+@media(max-width:800px) {
+ .walkthrough-heading { align-items:start; flex-direction:column; gap:18px; }
+ .walkthrough-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px 14px; }
+ .walkthrough-image { height:clamp(230px,52vw,380px); }
+}
+@media(max-width:480px) {
+ .walkthrough-title { font-size:48px; }
+ .walkthrough-grid { gap:24px 12px; }
+ .walkthrough-image { height:230px; }
+}

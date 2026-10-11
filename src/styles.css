@@ -1316,3 +1316,37 @@ footer {
   .hero-feature-copy strong { font-size:8px; }
   .hero-feature-copy small { font-size:9px; }
 }
+
+
+/* =========================================================
+   HOMEPAGE FLOW — WHAT WE DO, SELECTED WORK, TYPOLOGIES
+========================================================= */
+.typologies-section { border-top: 1px solid var(--line); }
+.typologies-heading { display:flex; justify-content:space-between; align-items:end; gap:40px; margin-bottom:45px; }
+.typologies-title { margin:0; font-size:clamp(48px,7vw,96px); line-height:.88; font-weight:400; letter-spacing:-.045em; }
+.typologies-title em { color:var(--gold); font-weight:400; }
+.typologies-heading > p { max-width:310px; margin:0 0 5px; color:var(--muted); font-size:13px; line-height:1.8; }
+.typologies-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+.typology-card { display:block; min-width:0; }
+.typology-image { height:clamp(240px,30vw,420px); background:#e5e1d9; }
+.typology-image img { transition:transform .8s cubic-bezier(.2,.65,.25,1); }
+.typology-card:hover .typology-image img { transform:scale(1.045); }
+.typology-number { position:absolute; top:14px; left:14px; z-index:1; color:white; font-size:10px; letter-spacing:.15em; }
+.typology-arrow { position:absolute; right:13px; bottom:13px; z-index:1; display:grid; place-items:center; width:38px; height:38px; color:#fff; border:1px solid rgba(255,255,255,.7); border-radius:50%; transition:background .25s,color .25s; }
+.typology-card:hover .typology-arrow { background:var(--gold); border-color:var(--gold); color:#fff; }
+.typology-meta { display:flex; justify-content:space-between; align-items:start; gap:10px; padding-top:15px; }
+.typology-meta h3 { margin:0 0 6px; font-size:clamp(18px,1.8vw,24px); font-weight:400; }
+.typology-meta p { margin:0; color:var(--muted); font-size:10px; line-height:1.5; }
+.typology-explore { display:flex; align-items:center; gap:4px; padding-top:4px; color:var(--gold); font-size:9px; letter-spacing:.08em; text-transform:uppercase; white-space:nowrap; }
+@media (max-width:800px) {
+  .typologies-heading { align-items:start; flex-direction:column; gap:18px; }
+  .typologies-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 14px; }
+  .typology-image { height:clamp(230px,55vw,390px); }
+}
+@media (max-width:480px) {
+  .typologies-title { font-size:48px; }
+  .typologies-grid { gap:24px 12px; }
+  .typology-image { height:250px; }
+  .typology-meta { flex-direction:column; }
+  .typology-explore { padding-top:0; }
+}

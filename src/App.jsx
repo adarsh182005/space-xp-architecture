@@ -6,6 +6,7 @@ import StudioIntro from "./components/StudioIntro";
 import FeaturedProject from "./components/FeaturedProject";
 import ProjectGrid from "./components/ProjectGrid";
 import Typologies from "./components/Typologies";
+import VideoWalkthroughs from "./components/VideoWalkthroughs";
 import Services from "./components/Services";
 import Philosophy from "./components/Philosophy";
 import About from "./components/About";
@@ -51,6 +52,7 @@ function App() {
         <Philosophy />
         <About />
         <Process />
+        <VideoWalkthroughs />
         <Statement />
         <Contact />
       </main>

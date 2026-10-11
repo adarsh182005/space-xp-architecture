@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import StudioIntro from "./components/StudioIntro";
 import FeaturedProject from "./components/FeaturedProject";
 import ProjectGrid from "./components/ProjectGrid";
+import Typologies from "./components/Typologies";
 import Services from "./components/Services";
 import Philosophy from "./components/Philosophy";
 import About from "./components/About";
@@ -42,10 +43,11 @@ function App() {
 
       <main>
         <Hero />
-        <StudioIntro />
+        <Services />
         <FeaturedProject />
         <ProjectGrid />
-        <Services />
+        <Typologies />
+        <StudioIntro />
         <Philosophy />
         <About />
         <Process />
